@@ -38,7 +38,7 @@ app.get("/top", async (req, res) => {
   try {
     connection = await mysql.createConnection(dbConfig);
     const [rows] = await connection.execute(
-      "SELECT name, score FROM players ORDER BY score DESC LIMIT 10"
+      "SELECT name, score FROM players ORDER BY score DESC"
     );
     res.json(rows);
   } catch (err) {
