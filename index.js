@@ -49,6 +49,5 @@ app.get("/top", async (req, res) => {
   }
 });
 
-// Render требует, чтобы порт брался из process.env.PORT
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
