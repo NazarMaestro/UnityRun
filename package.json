@@ -1,13 +1,11 @@
 {
-  "name": "unity-express-api",
+  "name": "game-api",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "type": "module",
   "scripts": {
-    "start": "node api/index.js"
+    "dev": "vercel dev"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "mysql2": "^3.9.2",
-    "cors": "^2.8.5"
+    "mysql2": "^3.6.0"
   }
 }
